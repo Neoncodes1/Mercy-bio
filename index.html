@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Queen Aura - Biography</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px;
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 10px 0 5px;
+    }
+
+    h2 {
+      color: #ff66cc;
+      border-bottom: 1px solid #444;
+      padding-top: 25px;
+    }
+
+    p {
+      margin: 10px 20px;
+      font-size: 17px;
+    }
+
+    .social-links {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .social-links a {
+      color: #ff66cc;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://i.ibb.co/hrTqv6X/8bd14c880091f60ba92ced41af59b510-1.jpg" alt="Queen Aura">
+    <h1>Queen Aura</h1>
+    <p>Also known as Mercy </p>
+  </header>
+
+  <h2>About Me</h2>
+  <p>I'm not fun around new people, kind of like an introvert. I enjoy reading at times, mostly knitting, and I absolutely love sleeping. My goal in life is to inspire others and spread light in my own way.</p>
+
+  <h2>My Birthday</h2>
+  <p>Birthday: <strong>28 February 2011</strong></p>
+  <p>Age: <strong id="age"></strong> years old</p>
+
+  <h2>My Love Life 💕</h2>
+  <p>I'm in a long-distance relationship with someone very special — Emmanuel Mickhael. Even though we're far apart, our love keeps us close every day. It's not always easy, but it's beautiful and worth it.</p>
+
+  <h2>Advice for the Heartbroken 💔</h2>
+  <p>If you're heartbroken, remember: healing takes time. You are worthy of real love, and this pain will pass. Never let one chapter define your whole book.</p>
+
+  <h2>Advice for Long-Distance Lovers 🌍</h2>
+  <p>Trust, communication, and patience are the keys. Distance means so little when someone means so much. Keep showing up for each other, even from miles away.</p>
+
+  <h2>Socials</h2>
+  <div class="social-links">
+    <a href="https://tiktok.com/@dfw_amope" target="_blank">TikTok: @dfw_amope</a>
+    <!-- Add more socials if you want -->
+  </div>
+
+  <footer>
+    &copy; 2025 Queen Aura. Made with 💜 in Acode.
+  </footer>
+
+  <script>
+    // Auto age calculation
+    const birthDate = new Date("2011-02-28");
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    document.getElementById("age").textContent = age;
+  </script>
+
+</body>
+</html>
